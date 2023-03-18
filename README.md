@@ -5,7 +5,7 @@
 
 # 1. What is this? What problem was solved?
 
-This website [https://asciinema.org/](https://asciinema.org/) Is a command line screen sharing website, it defines a set of Ascii Cast format files to store screen content, this library is used to parse Ascii Cast files，support [v1](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v1.md) and [v2](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md) two versions.
+This website [https://asciinema.org/](https://asciinema.org/) is record and share your terminal session website, the simple way., it defines a set of Ascii Cast format files to store screen content, this library is used to parse Ascii Cast files，support [v1](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v1.md) and [v2](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md) two versions.
 
 # 2. API code examples
 
