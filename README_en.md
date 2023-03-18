@@ -1,15 +1,15 @@
-# asciinema parser 
+# asciinema parser
 
 [中文文档](./README.md)
 [English Document](./README_en.md)
 
-# 一、这是什么？解决了什么问题？
+# 1. What is this? What problem was solved?
 
-这个网站[https://asciinema.org/](https://asciinema.org/)是一个命令行录屏分享网站，它定义了一套`Ascii Cast`格式的文件来存储录屏内容，这个库就是用来解析`Ascii Cast`文件的，支持[v1](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v1.md)和[v2](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md)两个版本。
+This website [https://asciinema.org/](https://asciinema.org/) Is a command line screen sharing website, it defines a set of Ascii Cast format files to store screen content, this library is used to parse Ascii Cast files，support [v1](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v1.md) and [v2](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md) two versions.
 
-# 二、 API代码示例
+# 2. API code examples
 
-## 2.1 检查录屏文件是哪个版本
+## 2.1 Check the version of the screen recording file
 
 ```go
 package main
@@ -28,7 +28,6 @@ func main() {
 [2.143733, "o", " "]
 [6.541828, "o", "Bye!"]`
 
-	// 识别版本
 	version, err := asciinema_parser.DetectVersion(context.Background(), asciiCastV2String)
 	if err != nil {
 		panic(err)
@@ -38,7 +37,7 @@ func main() {
 }
 ```
 
-## 2.2 解析V1格式的录屏软件
+## 2.2 Parse V1 format of the screen recording software
 
 ```go
 package main
@@ -83,7 +82,7 @@ func main() {
 }
 ```
 
-## 2.3 解析V2格式的录屏软件
+## 2.3 Parse V2 format of the screen recording software
 
 ```go
 package main
