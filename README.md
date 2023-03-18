@@ -7,9 +7,15 @@
 
 This website [https://asciinema.org/](https://asciinema.org/) is record and share your terminal session website, it defines a set of Ascii Cast format files to store screen content, this library is used to parse Ascii Cast files，support [v1](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v1.md) and [v2](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md) two versions.
 
-# 2. API code examples
+# 2. How to install 
 
-## 2.1 Check the version of the screen recording file
+```bash
+go get -u github.com/golang-infrastructure/go-asciinema-parser
+```
+
+# 3. API code examples
+
+## 3.1 Check the version of the screen recording file
 
 ```go
 package main
@@ -37,7 +43,7 @@ func main() {
 }
 ```
 
-## 2.2 Parse V1 format of the screen recording software
+## 3.2 Parse V1 format of the screen recording software
 
 ```go
 package main
@@ -82,7 +88,7 @@ func main() {
 }
 ```
 
-## 2.3 Parse V2 format of the screen recording software
+## 3.3 Parse V2 format of the screen recording software
 
 ```go
 package main

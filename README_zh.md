@@ -7,9 +7,15 @@
 
 这个网站[https://asciinema.org/](https://asciinema.org/)是一个命令行录屏分享网站，它定义了一套`Ascii Cast`格式的文件来存储录屏内容，这个库就是用来解析`Ascii Cast`文件的，支持[v1](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v1.md)和[v2](https://github.com/asciinema/asciinema/blob/develop/doc/asciicast-v2.md)两个版本。
 
-# 二、 API代码示例
+# 二、安装
 
-## 2.1 检查录屏文件是哪个版本
+```bash
+go get -u github.com/golang-infrastructure/go-asciinema-parser
+```
+
+# 三、 API代码示例
+
+## 3.1 检查录屏文件是哪个版本
 
 ```go
 package main
@@ -38,7 +44,7 @@ func main() {
 }
 ```
 
-## 2.2 解析V1格式的录屏软件
+## 3.2 解析V1格式的录屏软件
 
 ```go
 package main
@@ -83,7 +89,7 @@ func main() {
 }
 ```
 
-## 2.3 解析V2格式的录屏软件
+## 3.3 解析V2格式的录屏软件
 
 ```go
 package main
